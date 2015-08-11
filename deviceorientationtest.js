@@ -1,10 +1,7 @@
 
     var logOrientation = function(){
-      $("#absolute").text(event.absolute);
-      $("#alpha").text(event.alpha);
-      $("#beta").text(event.beta);
-      $("#gamma").text(event.gamma);
-      console.log("event");
+      $("#alpha").text(parseInt(event.alpha));
+      $("#beta").text(parseInt(event.beta));
+      $("#gamma").text(parseInt(event.gamma));
     }
     window.addEventListener("deviceorientation",logOrientation,true);
-console.log("ready")
